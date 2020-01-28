@@ -72,4 +72,5 @@ performance[[i]] <- performance_table(predictions[[i]], test_df[[i]],predicted_u
 er[[i]] <- expected_response(test_df[[i]],predictions[[i]],predicted_uplift[[i]],"treatment_column","name_treatment_1","name_treatment_2","name_control")
 
 res_qini[[i]] <- qini(performance[[i]], 1)
+}
 ```
